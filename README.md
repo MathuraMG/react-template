@@ -7,3 +7,5 @@
 1. Followed first Reference
 2. Added Counter.jsx into components inside app folder
 3. add eslint
+
+[eslint reference](https://www.robinwieruch.de/react-eslint-webpack-babel/)

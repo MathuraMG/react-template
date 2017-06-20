@@ -11,11 +11,18 @@ var config = {
     filename: 'bundle.js'
   },
   module: {
-    loaders: [{
-      test: /\.jsx?/,
-      include: APP_DIR,
-      loader: 'babel-loader'
-    }]
+    loaders: [
+      {
+        test: /\.jsx?/,
+        include: APP_DIR,
+        loader: 'babel-loader'
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'eslint-loader'
+      }
+    ]
   }
 };
 

@@ -1,5 +1,4 @@
 import React from 'react';
-import {render} from 'react-dom';
 
 class Counter extends React.Component {
   constructor(props) {
@@ -13,8 +12,8 @@ class Counter extends React.Component {
     console.log('Im saying hi');
   }
   increaseCount() {
-    let newCount = this.state.count + 1;
-    this.setState({count: newCount});
+    const newCount = this.state.count + 1;
+    this.setState({ count: newCount });
   }
   render() {
     return (
@@ -25,7 +24,7 @@ class Counter extends React.Component {
         <button onClick={this.sayHi}> Click Me </button>
         <button onClick={this.increaseCount}> Count </button>
       </div>
-    )
+    );
   }
 }
 
